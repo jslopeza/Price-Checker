@@ -2,10 +2,24 @@ body{
 	padding-top: 60px;
 }
 
-.btn-info {
-	margin: 5px;
-}
-
 .text {
 	text-align:center;
+}
+
+.checkout{
+	margin-bottom: 0;
+}
+
+.total{
+	padding: 0;
+	border:1px solid #dddddd;
+}
+
+.total > h5{
+	padding:0 15px 10px 15px;
+	border-bottom: 1px solid #dddddd; 
+}
+
+.total > #no-border{
+	border : 0;
 }
