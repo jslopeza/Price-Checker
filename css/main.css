@@ -23,3 +23,8 @@ body{
 .total > #no-border{
 	border : 0;
 }
+
+.btn{
+	width: 100%;
+}
+
