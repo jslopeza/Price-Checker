@@ -128,79 +128,6 @@
 						<td>2</td>
 						<td>$5.00</td>
 					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-
 				</table>
 
 				<div class="total col-md-5 col-md-offset-7">
@@ -226,6 +153,13 @@
 	<!-- Javascript -->
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script>
+		var MyRows = $('table#table').find('tr');
+		for (var i = 0; i < MyRows.length; i++) {
+			var MyIndexValue = $(MyRows[i]).find('td:eq(0)').html();
+			console.log(MyIndexValue);
+		}
+	</script>
 
 </body>
 </html>
