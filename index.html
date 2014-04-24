@@ -32,7 +32,13 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<table class="table">
+		 			<table class="products">
+						<script id="product_view_template" type="text/template">
+							 <a class="btn btn-primary"><%= name %><br><%= price %></a>
+						</script>
+					 </table> 
+	
+				<!-- <table class="table">
 					<th class="text">Category 1</th>
 					<th class="text">Category 2</th>
 					<th class="text">Category 3</th>
@@ -82,7 +88,7 @@
 						<td><a class="btn btn-primary btn-lg" href="#">Product 4</a></td>
 						<td><a class="btn btn-primary btn-lg" href="#">Product 5</a></td>
 					</tr>
-				</table>
+				</table> -->
 			</div>
 		
 		
@@ -153,6 +159,22 @@
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/lib/handlebars-v.1.3.0.js"></script>
+	
+	<!-- Models -->
+	
+	<script type="text/javascript" src="js/models/product.js"></script>
+	
+	<!-- Collections -->
+	
+	<script type="text/javascript" src="js/collections/products.js"></script>
+	
+	<!-- Views -->
+	
+	<script type="text/javascript" src="js/views/product.js"></script>
+	
+	<!-- Main App File -->
+	
+	<script type="text/javascript" src="js/pos.js"></script>
 
 </body>
 </html>
