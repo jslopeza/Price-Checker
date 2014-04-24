@@ -32,57 +32,20 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-				<table class="table">
-					<th class="text">Category 1</th>
-					<th class="text">Category 2</th>
-					<th class="text">Category 3</th>
-					<th class="text">Category 4</th>
-					<th class="text">Category 5</th>
-
-					<tr>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 1<br>$3.00</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 2</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 3</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 4</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 5</a></td>
-					</tr>
-
-					<tr>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 1</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 2</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 3</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 4</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 5</a></td>
-					</tr>
-					<tr>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 1</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 2</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 3</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 4</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 5</a></td>
-					</tr>
-					<tr>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 1</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 2</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 3</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 4</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 5</a></td>
-					</tr>
-					<tr>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 1</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 2</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 3</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 4</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 5</a></td>
-					</tr>
-					<tr>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 1</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 2</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 3</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 4</a></td>
-						<td><a class="btn btn-primary btn-lg" href="#">Product 5</a></td>
-					</tr>
-				</table>
+		 			<table class="products table">
+		 				<!-- 
+		 					<tr>
+		 					<th class="text">Category 1</th>
+		 					<th class="text">Category 2</th>
+		 					<th class="text">Category 3</th>
+		 					<th class="text">Category 4</th>
+		 					<th class="text">Category 5</th>
+		 				</tr>
+		 				-->
+						<script id="product_view_template" type="text/template">
+							 <a class="btn btn-primary"><%= name %><br><%= price %></a>
+						</script>
+					 </table> 
 			</div>
 		
 		
@@ -145,14 +108,32 @@
  
 	<div class="footer">
 		<div class="container">
-			<p class="text">Copyright &copy; 2014 by Binoy Patel & Giuseppe Dibella</p>
+			<p class="text">Copyright &copy; 2014 by Binoy Patel &amp; Giuseppe Dibella</p>
 		</div>
 	</div> 
 	
 	<!-- Javascript -->
+	<script type="text/javascript" src="js/lib/underscore.js"></script>
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/backbone.js"></script>
 	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/lib/handlebars-v.1.3.0.js"></script>
-
+	<script type="text/javascript" src="js/lib/handlebars-v1.3.0.js"></script>
+	
+	<!-- Main App File -->
+	
+	<script type="text/javascript" src="js/pos.js"></script>
+	
+	<!-- Models -->
+	
+	<script type="text/javascript" src="js/models/product.js"></script>
+	
+	<!-- Collections -->
+	
+	<script type="text/javascript" src="js/collections/products.js"></script>
+	
+	<!-- Views -->
+	
+	<script type="text/javascript" src="js/views/productView.js"></script>
+	
 </body>
 </html>
