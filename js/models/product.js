@@ -1,3 +1,7 @@
-POS.Models.Product = Backbone.Model.extend({
+(function() {
+	
+	POS.Models.Product = Backbone.Model.extend({
 		
 	});
+	
+})();
