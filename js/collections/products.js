@@ -28,16 +28,7 @@
 		{
 			name: 'Product05',
 			price: '$ ' + 1.50,
-		},
-		{
-			name: 'Product08',
-			price: '$ ' + 9.50,
-		},
-		{
-			name: 'Product09',
-			price: '$ ' + 3.25,
 		}
-
 
 	]);
 })();
