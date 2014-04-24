@@ -40,7 +40,7 @@
 		
 	});
 	
-	var productsView = new App.Views.Products({ collection: products });
+	var productsView = new POS.Views.Products({ collection: products });
 	 $('.products').html(productsView.render().el);
 	
 });
