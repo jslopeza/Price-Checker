@@ -27,71 +27,29 @@
 			</div>
 		</div>
 	</div>
+
 	<!-------------- MAIN ------------------>
 	
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8">
-			<button id="productBtn" onclick="showProducts()" class="btn btn-primary">Show Products</button>
-		 			<table class="products table">
-		 				<!-- 
-		 					<tr>
-		 					<th class="text">Category 1</th>
-		 					<th class="text">Category 2</th>
-		 					<th class="text">Category 3</th>
-		 					<th class="text">Category 4</th>
-		 					<th class="text">Category 5</th>
-		 				</tr>
-		 				-->
-						<script id="product_view_template" type="text/template">
-							 <a class="btn btn-primary"><%= name %><br><%= price %></a>
-						</script>
-					 </table> 
+				<button id="productBtn" onclick="showProducts()" class="btn btn-primary">Show Products</button>
+		 		<table class="products table">
+		 			<script id="product_view_template" type="text/template">
+						<a class="btn btn-primary"><%= name %><br><%= price %></a>
+					</script>
+				</table> 
 			</div>
 		
-			<!-- Need to delete test items --> 
 			<div class="col-md-4">
 				<table class="table table-bordered checkout">
 					<th>No.</th>
 					<th>Product Name</th>
 					<th>Qty</th>
 					<th>Price</th>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
-					<tr>
-						<td>1</td>
-						<td>Test 1</td>
-						<td>2</td>
-						<td>$5.00</td>
-					</tr>
+					<script type="text/template" id="checkoutView">
+						<td><%= name %></td>
+					</script>
 				</table>
 
 				<div class="total col-md-5 col-md-offset-7">
@@ -135,14 +93,10 @@
 	<!-- Views -->
 	
 	<script type="text/javascript" src="js/views/productView.js"></script>
+	<script type="text/javascript" src="js/views/checkout.js"></script>
 
-	<!-- Temporary product script -->
-	<script>
-	function showProducts(){
-		$('.products').html(productsView.render().el);
-		$('#productBtn').css('visibility','hidden');
-	}	
-	</script>
+	<!-- App File for showing products -->
+	<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>
