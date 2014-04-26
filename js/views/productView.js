@@ -41,7 +41,7 @@
 
 	});
 
-	var productsView = new POS.Views.Products({ collection: products });
-	 $('.products').html(productsView.render().el);
+	window.productsView = new POS.Views.Products({ collection: products });
+	//$('.products').html(productsView.render().el);
 
 })(jQuery);
