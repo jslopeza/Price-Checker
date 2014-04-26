@@ -25,20 +25,11 @@
 
 		},
 
-		events: {
-			'click a' : 'showAlert'
-		},
-
 		render: function() {
 			var template = this.template(this.model.toJSON() );
 			this.$el.html(template);
 			return this;
-		},
-
-		showAlert: function() {
-			alert("events working on td tags");
 		}
-
 	});
 
 	window.productsView = new POS.Views.Products({ collection: products });
