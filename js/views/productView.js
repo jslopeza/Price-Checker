@@ -19,6 +19,8 @@
 
 		tagName: 'td',
 
+		className : "btn btn-primary",
+
 		template: template('product_view_template'),
 
 		initialize: function() {
@@ -27,7 +29,7 @@
 
 		render: function() {
 			var template = this.template(this.model.toJSON() );
-			this.$el.html(template);
+			this.setElement(this.$el.html(template));
 			return this;
 		}
 	});
