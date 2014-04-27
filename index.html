@@ -36,7 +36,7 @@
 				<button id="productBtn" onclick="showProducts()" class="btn btn-primary">Show Products</button>
 		 		<table class="products table">
 		 			<script id="product_view_template" type="text/template">
-						<a class="btn btn-primary"><%= name %><br><%= price %></a>
+						<p id="<%= id %>"><%= name %> <%= price %></p>
 					</script>
 				</table> 
 			</div>
