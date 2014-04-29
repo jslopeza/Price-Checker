@@ -43,7 +43,11 @@
 					<th>Product Name</th>
 					<th>Qty</th>
 					<th>Price ($)</th>
-					<tbody>
+					<script id="checkoutTemplate" type="text/template">
+						<a data-id="<%= id %>"><%= name %> <%= price %></a>
+					</script>
+					<!-- 
+						<tbody>
 						<tr>
 							<td class="checkout-td" contenteditable="true"></td>
 							<td class="checkout-td"></td>
@@ -75,6 +79,7 @@
 							<td class="checkout-td"></td>
 						</tr>
 					</tbody>
+					-->
 				</table>
 
 				<div class="total col-md-5 col-md-offset-7">
