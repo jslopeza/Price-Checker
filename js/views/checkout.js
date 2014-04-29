@@ -3,7 +3,7 @@
 	POS.Views.Checkout = Backbone.View.extend({
 		el : 'td',
  		
- 		//template : template('checkoutTemplate'),
+ 		template : template('checkoutTemplate'),
 
  		events : {
 			'click a' : 'getProduct'
