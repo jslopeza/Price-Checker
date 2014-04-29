@@ -17,4 +17,5 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Phonegap vibrate 
 function endSale() {
 	navigator.notification.vibrate(2500);
+	alert("working");
 }
