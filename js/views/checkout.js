@@ -2,7 +2,9 @@
 
 	POS.Views.Checkout = Backbone.View.extend({
 		el : 'td',
- 
+ 		
+ 		template : template('checkoutTemplate'),
+
  		events : {
 			'click a' : 'getProduct'
  		},
@@ -14,8 +16,12 @@
 			e.preventDefault();
 			var id = $(e.currentTarget).data('id');
 			var item = this.collection.at(id);
-			var product = item.get('name')
-			console.log(product);
+			var name = item.get('name')
+			console.log(name);
+		},
+
+		render : function(){
+
 		}
 
 	});
