@@ -4,3 +4,7 @@ function showProducts(){
 
 	window.checkout = new POS.Views.Checkout;
 }
+
+function endSale() {
+	navigator.notification.vibrate(2500);
+}
