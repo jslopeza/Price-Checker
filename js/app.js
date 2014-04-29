@@ -5,6 +5,7 @@ function showProducts(){
 	window.checkout = new POS.Views.Checkout;
 }
 
+// Phonegap vibrate 
 function endSale() {
 	navigator.notification.vibrate(2500);
 }
