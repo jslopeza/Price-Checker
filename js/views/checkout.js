@@ -1,23 +1,28 @@
 (function($){
 
 	POS.Views.Checkout = Backbone.View.extend({
-		el : 'td',
+		el : '.checkout',
 
 		//tagName : 'td',
 
-		//template : "checkoutView",
+		template : "checkoutView",
 
 		events : {
-			'click p' : 'showAlert'
+			'click .checkout-td' : 'getProduct'
 		},
 		render : function(){
-			window.template = this.template(this.model.toJSON());
-			this.$el.html(template);
 			return this;
 		},
 
 		showAlert : function(){
 			alert('click working');
+		},
+
+		getProduct : function(){
+			var id = $('.checkout-td').map(function(){
+				return $(this).text();
+			});
+			console.log(id);
 		}
 
 	});
