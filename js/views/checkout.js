@@ -16,8 +16,9 @@
 			e.preventDefault();
 			var id = $(e.currentTarget).data('id');
 			var item = this.collection.at(id);
-			var name = item.get('name')
-			console.log(name);
+			var name = item.get('name');
+			alert(name);
+			return name;
 		},
 
 		render : function(){
