@@ -1,26 +1,26 @@
 [
     {   
-        "id" : "1",
+        "id" : "0",
         "name": "Macbook Pro 13'",
         "price": "$1,500"
     },
     {
-        "id" : "2",
+        "id" : "1",
         "name": "Macbook Pro 15'",
         "price": "$2,100"
     },
     {
-        "id" : "3",
+        "id" : "2",
         "name": "Mac Pro",
         "price": "$4,000"
     },
     {
-        "id" : "4",
+        "id" : "3",
         "name": "Mac Mini",
         "price": "$800"
     },
     {
-        "id" : "5",
+        "id" : "4",
         "name": "Macbook Pro 13' Retina",
         "price": "$1,800"
     }
