@@ -12,7 +12,7 @@
 	</description>
 
 	<author href="http://five-tech.com/about" email="binoypatel14@gmail.com">
-		Binoy Patel & Giuseppe Dibella
+		Binoy Patel and Giuseppe Dibella
 	</author>
 
 	<!-- Permissions -->
@@ -22,7 +22,7 @@
 	<preference name="fullscreen" value="true"/>
 
 	<preference name="target-device" value="universal"/>
-	
+
 	<preference name="orientation" value="default"/>
 
 	<!-- Plugins -->
