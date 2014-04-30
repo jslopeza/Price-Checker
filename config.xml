@@ -19,11 +19,11 @@
 	
 	<preference name="phonegap-version" value="3.3.0"/>
 
-	<preference name="fullscreen" value="true"/>
+	<preference name="Fullscreen" value="true"/>
 
 	<preference name="target-device" value="universal"/>
 
-	<preference name="orientation" value="default"/>
+	<preference name="Orientation" value="default"/>
 
 	<!-- Plugins -->
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
