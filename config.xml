@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml refrence: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "https://www.w3.org/ns/widget"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.five-tech.backbone_pos"
+		version   = "1.0.0">
+	<name>Backbone POS</name>
+
+	<description>
+		A simple Point of Sale application made in Backbone.js
+	</description>
+
+	<author href="http://five-tech.com/about" email="binoypatel14@gmail.com">
+		Binoy Patel & Giuseppe Dibella
+	</author>
+
+	<!-- Permissions -->
+	
+	<preference name="phonegap-version" value="3.3.0"/>
+
+	<preference name="fullscreen" value="true"/>
+
+	<preference name="target-device" value="universal"/>
+	
+	<preference name="orientation" value="default"/>
+
+	<!-- Plugins -->
+	<gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
+</widget>
