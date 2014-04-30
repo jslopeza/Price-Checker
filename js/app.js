@@ -5,17 +5,17 @@ function showProducts(){
 	window.checkout = new POS.Views.Checkout({collection : products});
 }
 
-document.addEventListener("deviceready", onDeviceReady, false);
+/*document.addEventListener("deviceready", onDeviceReady, false);
 
     // device APIs are available
     //
     function onDeviceReady() {
         // Empty
-    }
+    }*/
 
 
 // Phonegap vibrate 
 function endSale() {
-	navigator.notification.vibrate(2500);
+	navigator.notification.vibrate(2000);
 	alert("working");
 }
