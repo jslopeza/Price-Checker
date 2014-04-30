@@ -17,5 +17,4 @@ function showProducts(){
 // Phonegap vibrate 
 function endSale() {
 	navigator.notification.vibrate(2000);
-	alert("working");
 }
