@@ -23,8 +23,19 @@
 
 		template: template('productTemplate'),
 
+		events : {
+			'click a' : 'passData'
+		},
+
 		initialize: function() {
 
+		},
+
+		passData : function(){
+			var id = this.model.get('id'),
+				name = this.model.get('name'),
+				price = this.model.get('price');
+			Backbone.Events.trigger('click', id,name,price);
 		},
 
 		render: function() {
