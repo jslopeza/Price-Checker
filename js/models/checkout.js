@@ -2,10 +2,11 @@
 
 	POS.Models.Checkout = Backbone.Model.extend({
 		defaults : {
-			id : "",
+			id :  0,
 			name : "",
-			qty : "1",
-			price : ""
+			price : "",
+			qty : 1
+			
 		}
 	});
 })();
