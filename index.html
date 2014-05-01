@@ -44,7 +44,7 @@
 					<th>Qty</th>
 					<th>Price ($)</th>
 					<script id="checkoutTemplate" type="text/template">
-						<a data-id="<%= id %>"><%= name %> <%= price %></a>
+						<ul><%= name %></ul>
 					</script>
 					<!-- 
 						<tbody>
@@ -115,10 +115,12 @@
 	<!-- Models -->
 	
 	<script type="text/javascript" src="js/models/product.js"></script>
+	<script type="text/javascript" src="js/models/checkout.js"></script>
 	
 	<!-- Collections -->
 	
 	<script type="text/javascript" src="js/collections/products.js"></script>
+	<script type="text/javascript" src="js/collections/checkout.js"></script>
 	
 	<!-- Views -->
 	
