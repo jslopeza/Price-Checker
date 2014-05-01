@@ -2,7 +2,7 @@ function showProducts(){
 	$('.products').html(productsView.render().el);
 	$('#productBtn').css('visibility','hidden');
 
-	window.checkout = new POS.Views.Checkout({collection : products});
+	window.checkout = new POS.Views.Checkout;
 }
 
 /*document.addEventListener("deviceready", onDeviceReady, false);
