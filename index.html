@@ -38,49 +38,26 @@
 			</div>
 		
 			<div class="col-md-4">
-				<table class="table table-bordered checkout">
+				
+				<table class="table table-bordered">
 					<th>No.</th>
 					<th>Product Name</th>
 					<th>Qty</th>
 					<th>Price ($)</th>
-					<script id="checkoutTemplate" type="text/template">
-						<ul><%= name %></ul>
-					</script>
-					<!-- 
-						<tbody>
-						<tr>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-						</tr>
-						<tr>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-						</tr>
-						<tr>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-						</tr>
-						<tr>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-						</tr>
-						<tr>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-							<td class="checkout-td" contenteditable="true"></td>
-							<td class="checkout-td"></td>
-						</tr>
-					</tbody>
-					-->
 				</table>
+
+				<table class="table table-bordered checkout">
+					<tr>
+						<script id="checkoutTemplate" type="text/template">
+							<td><%= id %></td>
+							<td><%= name %></td> 
+							<td><%= qty %></td>
+							<td><%= price %></td>
+						</script>
+					</tr>
+				</table>
+					
+				
 
 				<div class="total col-md-5 col-md-offset-7">
 					<h5>Subtotal : </h5>
