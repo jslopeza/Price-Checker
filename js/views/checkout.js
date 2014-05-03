@@ -3,8 +3,8 @@
 	POS.Views.Checkout = Backbone.View.extend({
  		
  		el : '.checkout tbody',
- +
- + 		//tagName : 'td',
+ 
+ 		//tagName : 'td',
  		template : template('checkoutTemplate'),
  
  		initialize: function() {
@@ -20,7 +20,7 @@
 	
 		render : function(){
 			var template = this.template(checkoutModel.toJSON());
- +			this.setElement(this.$el.html(template));
+ 			this.setElement(this.$el.html(template));
 			return this;
 		}
 
