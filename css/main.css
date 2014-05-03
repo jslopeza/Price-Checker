@@ -33,3 +33,19 @@ a, a:hover{
 	color : white;
 	text-decoration: none !important;
 }
+
+#id {
+	width: 56px;
+}
+
+#name {
+	width: 166px;
+}
+
+#qty {
+	width: 61px;
+}
+
+.table {
+	margin-bottom: 0px;
+}

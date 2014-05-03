@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Backbone POS</title>
+	<title>Backbone Apple Price Checker</title>
 	
 	<link rel="shortcut icon" href="img/favicon.png"> <!-- Icon -->
 
@@ -19,7 +19,7 @@
 	<div class="navbar navbar-default navbar-static" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Backbone POS</a>
+				<a class="navbar-brand" href="index.html">Backbone Apple Price Checker</a>
 			</div>
 		</div>
 	</div>
@@ -32,32 +32,32 @@
 				<button id="productBtn" onclick="showProducts()" class="btn btn-primary">Show Products</button>
 		 		<table class="products table">
 		 			<script id="productTemplate" type="text/template">
-						<a data-id="<%= id %>"><%= name %> <%= price %></a>
+						<a data-id="<%= id %>"><%= name %></a>
 					</script>
 				</table> 
 			</div>
 		
 			<div class="col-md-4">
-				
 				<table class="table table-bordered">
 					<th>No.</th>
 					<th>Product Name</th>
 					<th>Qty</th>
 					<th>Price ($)</th>
 				</table>
-
-				<table class="table table-bordered checkout">
-					<tr>
-						<script id="checkoutTemplate" type="text/template">
-							<td><%= id %></td>
-							<td><%= name %></td> 
-							<td><%= qty %></td>
-							<td><%= price %></td>
-						</script>
-					</tr>
-				</table>
 					
-				
+				<table class="table table-bordered checkout">
+					
+					<tr>
+ 						<script id="checkoutTemplate" type="text/template">
+ 							<tr>
+ 								<td id="id"><%= id %></td>
+ 								<td id="name"><%= name %></td> 
+ 								<td id="qty"><%= qty %></td>
+ 								<td><%= price %></td>
+ 							<tr>
+ 						</script>
+ 					</tr>
+ 				</table>
 
 				<div class="total col-md-5 col-md-offset-7">
 					<h5>Subtotal : </h5>
@@ -106,6 +106,8 @@
 
 	<!-- App File for showing products -->
 	<script type="text/javascript" src="js/app.js"></script>
+	
+	
 
 </body>
 </html>
