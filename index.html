@@ -46,17 +46,17 @@
 				</table>
 					
 				<table class="table table-bordered checkout">
- +					<tr>
- +						<script id="checkoutTemplate" type="text/template">
- +							<tr>
- +								<td><%= id %></td>
- +								<td><%= name %></td> 
- +								<td><%= qty %></td>
- +								<td><%= price %></td>
- +							<tr>
- +						</script>
- +					</tr>
- +				</table>
+					<tr>
+ 						<script id="checkoutTemplate" type="text/template">
+ 							<tr>
+ 								<td><%= id %></td>
+ 								<td><%= name %></td> 
+ 								<td><%= qty %></td>
+ 								<td><%= price %></td>
+ 							<tr>
+ 						</script>
+ 					</tr>
+ 				</table>
 
 				<div class="total col-md-5 col-md-offset-7">
 					<h5>Subtotal : </h5>
