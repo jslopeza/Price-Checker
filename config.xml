@@ -5,10 +5,10 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.five-tech.backbone_pos"
 		version   = "1.0.0">
-	<name>Backbone POS</name>
+	<name>Apple Price Checker</name>
 
 	<description>
-		A simple Point of Sale application made in Backbone.js
+		A price checker made to tell the total price for apple products in New Jersey.
 	</description>
 
 	<author href="http://five-tech.com/about" email="binoypatel14@gmail.com">
