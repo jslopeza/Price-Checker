@@ -1,27 +1,16 @@
 (function($){
-
-	POS.Views.Checkouts = Backbone.View.extend({
-		tagName : 'tr',
- 
- 		render : function(checkoutModel){
- 			var checkoutCollection = new POS.Collections.Checkout({model : checkoutModel});
- 			console.log(checkoutCollection);
- 		}
- 	});
-
 	POS.Views.Checkout = Backbone.View.extend({
  		
- 		el : '.checkout tbody',
- 
- 		//tagName : 'td',
+ 		el : '.checkout',
+ 		
  		template : template('checkoutTemplate'),
  
  		initialize: function() {
 			Backbone.Events.on("click", this.sendData, this);
 		},
-		sendData: function(id, name, price) {
+		sendData: function(id, name, subtotal, tax, total) {
 			
-			window.checkoutModel = new POS.Models.Checkout({id : id, name : name, price : price });
+			window.checkoutModel = new POS.Models.Checkout({name : name, subtotal : subtotal, tax : tax, total : total});
 			console.log(checkoutModel.toJSON());
 			this.render();
 		},
