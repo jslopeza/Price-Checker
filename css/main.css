@@ -5,25 +5,13 @@
 .checkout{
 	margin-bottom: 0;
 }
-
-.total{
-	padding: 0;
-	border:1px solid #dddddd;
-	margin-top: 16px;
-	margin-bottom: 16px;
-}
-
-.total > h5{
-	padding:0 15px 10px 15px;
-	border-bottom: 1px solid #dddddd;
-}
-
-.total > #no-border{
-	border : 0;
-}
-
 .btn{
 	width: 100%;
+	margin: 2px;
+}
+
+.btn>a{
+	font-size: 18px;
 }
 .footer {
 	padding-top: 50px;
@@ -34,18 +22,30 @@ a, a:hover{
 	text-decoration: none !important;
 }
 
-#id {
-	width: 56px;
-}
-
 #name {
-	width: 166px;
+	width: 84.9px;
+	padding: 2px;
+	text-align: center;
 }
-
-#qty {
-	width: 61px;
+#subtotal {
+	width: 74px;
+	padding: 2px;
+	text-align: center;
+}
+#tax {
+	width: 58.5px;
+	padding: 2px;
+	text-align: center;
 }
 
 .table {
 	margin-bottom: 0px;
+}
+
+.end{
+	margin-top: 20px;
+}
+
+td{
+	border: 1px solid #dddddd;
 }
