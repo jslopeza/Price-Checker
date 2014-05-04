@@ -18,10 +18,11 @@
 				'Final Price',
 				'Done'
 			);
+			navigator.notification.beep(3);
 			navigator.notification.vibrate(2000);
 
 			function alertDismissed(){
-				
+
 			}
 		},
 	});
