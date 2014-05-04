@@ -38,22 +38,26 @@
 			</div>
 		
 			<div class="col-md-5">
-				<table class="table table-bordered">
+				<table class="table table-bordered header">
 					<th>Product Name</th>
 					<th>Subtotal ($)</th>
 					<th>Tax (NJ)</th>
 				</table>
-					
-				<table class="table table-bordered checkout">
- 					<tr>
- 					<script id="checkoutTemplate" type="text/template">
-						<td id="name"><%= name %></td>
-						<td id="subtotal"><%= subtotal %></td> 
-						<td id="tax"><%= tax %></td>
-					</script>
- 					</tr>
- 				</table>
-				<a class="btn btn-success end" href="#" onclick="endSale()">End Sale</a>
+				<div class="checkout">
+					<table class="table table-bordered">
+ 						<tr>
+ 							<script id="checkoutTemplate" type="text/template">
+								<td id="name"><%= name %></td>
+								<td id="subtotal"><%= subtotal %></td> 
+								<td id="tax"><%= tax %></td>
+							</script>
+ 						</tr>
+ 					</table>
+ 				</div>
+ 				
+				<div class="end">
+					<a class="btn btn-success" href="#">Find Total</a>
+				</div>
 			</div>
 		</div>
 	</div>	
@@ -90,6 +94,7 @@
 	
 	<script type="text/javascript" src="js/views/product.js"></script>
 	<script type="text/javascript" src="js/views/checkout.js"></script>
+	<script type="text/javascript" src="js/views/total.js"></script>
 
 	<!-- App File for showing products -->
 	<script type="text/javascript" src="js/app.js"></script>
