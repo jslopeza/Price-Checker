@@ -4,9 +4,9 @@
 		defaults : {
 			id :  0,
 			name : "",
-			price : "",
-			qty : 1
-			
+			subtotal : "",
+			tax : "",
+			total : ""			
 		}
 	});
 })();
