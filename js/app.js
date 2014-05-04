@@ -16,5 +16,7 @@ function showProducts(){
 
 // Phonegap vibrate 
 function endSale() {
+	
+	alert(this.model.get('total'));
 	navigator.notification.vibrate(2000);
 }
