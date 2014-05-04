@@ -19,6 +19,10 @@
 				'Done'
 			);
 			navigator.notification.vibrate(2000);
+
+			function alertDismissed(){
+				
+			}
 		},
 	});
 
