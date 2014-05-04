@@ -26,5 +26,6 @@
 	<preference name="Orientation" value="default"/>
 
 	<!-- Plugins -->
+	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
 </widget>
