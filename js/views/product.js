@@ -34,8 +34,10 @@
 		passData : function(){
 			var id = this.model.get('id'),
 				name = this.model.get('name'),
-				price = this.model.get('price');
-			Backbone.Events.trigger('click', id,name,price);
+				subtotal = this.model.get('subtotal'),
+				tax = this.model.get('tax'),
+				total = this.model.get('total');
+			Backbone.Events.trigger('click', id,name,subtotal,tax,total);
 		},
 
 		render: function() {
