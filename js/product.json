@@ -2,26 +2,44 @@
     {   
         "id" : "0",
         "name": "Macbook Pro 13'",
-        "price": "$1,500"
+        "subtotal" : "$1,199",
+        "tax" : "7%",
+        "total" : "$1282.93"
     },
     {
         "id" : "1",
-        "name": "Macbook Pro 15'",
-        "price": "$2,100"
+        "name": "Macbook Pro 13' Retina",
+        "subtotal" : "$1,799",
+        "tax" : "7%",
+        "total" : "$1924.93"
     },
     {
         "id" : "2",
-        "name": "Mac Pro",
-        "price": "$4,000"
+        "name": "Macbook Pro 15' Retina",
+        "subtotal" : "$1,999",
+        "tax" : "7%",
+        "total" : "$2138.93"
     },
     {
         "id" : "3",
-        "name": "Mac Mini",
-        "price": "$800"
+        "name": "Mac Pro",
+        "subtotal" : "$2,999",
+        "tax" : "7%",
+        "total" : "$3208.93"
     },
     {
         "id" : "4",
-        "name": "Macbook Pro 13' Retina",
-        "price": "$1,800"
+        "name": "Mac Mini",
+        "subtotal" : "$799",
+        "tax" : "7%",
+        "total" : "$854.93"
+    },
+    {
+        "id" : "5",
+        "name": "iMac",
+        "subtotal" : "$1,999",
+        "tax" : "7%",
+        "total" : "$2138.93"
     }
+    
 ]
