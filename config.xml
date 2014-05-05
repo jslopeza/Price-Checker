@@ -5,7 +5,7 @@
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.five-tech.backbone_pos"
 		version   = "1.0.0">
-	<name>Apple Price Checker</name>
+	<name>Price Checker</name>
 
 	<description>
 		A price checker made to tell the total price for apple products in New Jersey.
