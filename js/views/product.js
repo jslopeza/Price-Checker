@@ -24,7 +24,7 @@
 		template: template('productTemplate'),
 
 		events : {
-			'click a' : 'passData'
+			'tap a' : 'passData'
 		},
 
 		initialize: function() {
@@ -37,7 +37,7 @@
 				subtotal = this.model.get('subtotal'),
 				tax = this.model.get('tax'),
 				total = this.model.get('total');
-			Backbone.Events.trigger('click', id,name,subtotal,tax,total);
+			Backbone.Events.trigger('tap', id,name,subtotal,tax,total);
 		},
 
 		render: function() {
