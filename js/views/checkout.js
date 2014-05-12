@@ -6,7 +6,7 @@
  		template : template('checkoutTemplate'),
  
  		initialize: function() {
-			Backbone.Events.on("click", this.sendData, this);
+			Backbone.Events.on("tap", this.sendData, this);
 		},
 
 		sendData: function(id, name, subtotal, tax, total) {
